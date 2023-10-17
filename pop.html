@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="pop.css">
+  <title>POP UP Login Form</title>
+  <script src="https://js.paystack.co/v1/inline.js"></script>
+  <script src="app.js"></script>
+
+</head>
+
+<body>
+  <div class="popup" id="popup-1">
+    <div class="content">
+      <div class="close-btn" onclick="togglePopup()">
+        ×</div>
+
+      <h1>Payment</h1>
+      <div class="input-field"><input placeholder="Email" class="validate" id="email-address"></div>
+     <!--<div class="input-field"><input placeholder="Amount"id="amount" class="validate"></div>-->
+    <!-- <input id="price"value="18.50"/>-->
+    <p id="value-output"></p>
+      <button class="second-button" type="submit" onclick="payWithPaystack()">Pay</button>
+       
+
+
+    </div>
+  </div>
+  <script>
+    function togglePopup() {
+      document.getElementById("popup-1")
+        .classList.toggle("active");
+    }
+
+
+    window.onload = function() {
+        // Get the value from localStorage
+        var value = localStorage.getItem('myValue');
+        
+        // Display the value on the page
+        var output = document.getElementById('value-output');
+        output.innerText = value;
+      };
+  </script>
+
+</body>
+
+</html>

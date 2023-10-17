@@ -1,0 +1,261 @@
+<html>
+<body>
+    
+    
+<script src="app.js"></script>
+    <li><a href="royal threads.html">Home</a></li>
+    <div class="flex-container">
+<div class="box">
+<h2 class="heading" style="color:white ;">BLUEEEE</h2>
+<p class="rate" style="color:white ;">18.50</p>
+
+<a href="royal threads.html"><img src="img2.jpg" alt="image" alt="#"></a>
+<p class="detali" style="color:white ;">Beautiful handmade dress</p>
+<button type="submit" style="color:white ;" data-custom-value="100">Buy now</button>
+
+</div>
+<div class="box1">
+    <h2 class="heading" style="color:white ;">Asaasa</h2>
+    <p class="rate"  style="color:white ;">25</p>
+    <input id="price"value="25" style="display: none; visibility: hidden;" />
+    <img src="img2.jpg" alt="image" >
+    <p class="detali" style="color:white ;">Beautiful handmade dress</p>
+<a href="pop.html"  onclick=submitValue(25) >Buy now</a>    
+    </div>
+    
+    <div class="box2">
+        <h2 class="heading" style="color:white ;">long dress</h2>
+        <p class="rate" style="color:white ;">95</p>
+        <img src="img1.jpg" alt="image">
+        <p class="detali" style="color:white ;">Beautiful handmade dress</p>
+        <input id="price"value="95" style="display: none; visibility: hidden;" />
+
+        <a href="pop.html"  onclick=submitValue(95) >Buy now</a>    
+
+        </div>
+
+        <div class="box3">
+            <h2 class="heading" style="color:white ;">short dress</h2>
+            <p class="rate" style="color:white ;">75</p>
+            <img src="img3.jpg" alt="image">
+            <p class="detali" style="color:white ;">Beautiful handmade dress</p>
+            <a href="pop.html"  onclick=submitValue(75) >Buy now</a>    
+
+            </div>
+
+            <div class="box4">
+                <h2 class="heading" style="color:white ;">Asaasa</h2>
+                <p class="rate" style="color:white ;">18.50</p>
+                <img src="long dress.jpg" alt="image">
+                <p class="detali" style="color:white ;">Beautiful handmade dress</p>
+                <a href="pop.html"  onclick=submitValue(18.5) >Buy now</a>    
+                
+                </div>
+            <div class="box4">
+                <h2 class="heading" style="color:white ;">Asaasa</h2>
+                <p class="rate" style="color:white ;">180</p>
+                <img src="long dress.jpg" alt="image">
+                <p class="detali" style="color:white ;">Beautiful handmade dress</p>
+                <a href="pop.html"  onclick=submitValue(180) >Buy now</a>    
+                
+                </div>
+            <div class="box4">
+                <h2 class="heading" style="color:white ;">Asaasa</h2>
+                <p class="rate" style="color:white ;">190</p>
+                <img src="long dress.jpg" alt="image">
+                <p class="detali" style="color:white ;">Beautiful handmade dress</p>
+                <a href="pop.html"  onclick=submitValue(190) >Buy now</a>    
+                
+                </div>
+            <div class="box4">
+                <h2 class="heading" style="color:white ;">Asaasa</h2>
+                <p class="rate" style="color:white ;">180</p>
+                <img src="long dress.jpg" alt="image">
+                <p class="detali" style="color:white ;">Beautiful handmade dress</p>
+                <a href="pop.html"  onclick=submitValue(180) >Buy now</a>    
+                
+                </div>
+
+            
+</div>
+<script>
+    var input;
+    function submitValue(input_p){
+  //var input = document.getElementById('price');
+       // var value = input;
+
+        localStorage.setItem('myValue', input_p);
+
+        window.location.href = 'pop.html';
+
+}
+</script>
+<style>
+    @media screen and (max-width:1200px){
+      .box{width:40%;}  
+    }
+    @media screen and (max-height: 450px) {
+        .flex-container{display: flex;
+    flex-wrap:wrap ;}
+        } 
+body{
+    font-family:sans-serif;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7));
+background-position:center;
+background-size:cover;
+position:relative;
+}
+.flex-container{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  
+  
+  
+}
+.box1{
+    border: 2px solid rgb( 126, 124,124);
+border-radius: 10px;
+position: static;
+top: 15%;
+left: 15%;
+text-align: center;
+margin: 0 18px;
+}
+.box1 a{
+    color:rgb(8, 8, 8) ;
+}
+.box1 .price{
+    display: none;
+    visibility: hidden;
+}
+.box4{
+    border: 2px solid rgb( 126, 124,124);
+border-radius: 10px;
+position: static;
+top: 65%;
+left: 15%;
+text-align: center;
+margin: 0 18px;
+}
+.box2{
+    border: 2px solid rgb( 126, 124,124);
+border-radius: 10px;
+position: static;
+top: 15%;
+left: 35%;
+text-align: center;
+margin: 0 18px;
+}
+.box3{
+    border: 2px solid rgb( 126, 124,124);
+border-radius: 10px;
+position: static;
+top: 15%;
+left: 55%;
+text-align: center;
+margin: 0 18px;
+}
+.box{
+    border: 2px solid rgb( 126, 124,124);
+border-radius: 10px;
+position: static;
+top: 15%;
+left: 75%;
+text-align: center;
+margin: 0 18px;
+}
+img{
+width: 70px;
+height: 70px;
+margin: 10px 50px 10px 50px;}
+P {
+font-size: 1.lem;
+font-weight: bold;
+letter-spacing: 1px;}
+p.rate > del {
+opacity: 0.4;}
+button{
+margin: 10px 0 20px 0;
+font-size: 1.lem;
+background-color: black;
+color: rgb(3, 3, 3);
+border-radius: 15px;
+padding: 10px 20px 10px 20px;
+border-style: none;}
+button :hover{
+text-transform: uppercase;
+cursor :pointer;}
+img:hover{
+transform: scale(2.5);}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
